@@ -12,46 +12,47 @@
 <body>
     <!--Navigation Bar-->
     <header>
-    <nav class="primary-navbar">
-        <div class="nav-container top-nav">
-        <!-- Logo -->
-        <div class="logo">
-            <h1>LOGO</h1>
-        </div>
+        <nav class="primary-navbar">
+            <div class="nav-container top-nav">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1>LOGO</h1>
+                </div>
 
-        <!-- Search Bar -->
-        <form class="search-bar">
-            <input class="search__input" type="text" placeholder="Search" />
-        </form>
+                <!-- Search Bar -->
+                <form class="search-bar">
+                    <input class="search__input" type="text" placeholder="Search products..." />
+                </form>
 
-        <!-- Navigation Links -->
-        <div class="secondary-navbar-navlist">
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
+                <!-- Navigation Links -->
+                <div class="secondary-navbar-navlist">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Deals</a></li>
+                        <li><a href="#">Recipes</a></li>
+                    </ul>
+                </div>
 
-        <!-- Cart Icon -->
-        <div id="nav-shopping-cart-group">
-            <button class="nav-btn">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.5 18C8.3 18 9 18.7 9 19.5C9 20.3 8.3 21 7.5 21C6.7 21 6 20.3 6 19.5C6 18.7 6.7 18 7.5 18ZM16.5 18C17.3 18 18 18.7 18 19.5C18 20.3 17.3 21 16.5 21C15.7 21 15 20.3 15 19.5C15 18.7 15.7 18 16.5 18ZM2 3L2.3 3.1C3.6 3.5 4.2 3.8 4.6 4.3C5 4.9 5 5.6 5 7V9.8C5 12.7 5 13.7 5.9 14.6C6.8 15.5 8.1 15.5 10.9 15.5H12M16.2 15.5C17.8 15.5 18.6 15.5 19.1 15.1C19.7 14.6 19.8 13.8 20.2 12.3L20.7 9.9C21 8.1 21.2 7.3 20.7 6.7C20.3 6.1 18.8 6.1 17.1 6.1H11M5 6.1H7" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-            </button>
-        </div>
+                <!-- Cart Icon -->
+                <div id="nav-shopping-cart-group">
+                    <button class="nav-btn" aria-label="Shopping cart">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 18C8.3 18 9 18.7 9 19.5C9 20.3 8.3 21 7.5 21C6.7 21 6 20.3 6 19.5C6 18.7 6.7 18 7.5 18ZM16.5 18C17.3 18 18 18.7 18 19.5C18 20.3 17.3 21 16.5 21C15.7 21 15 20.3 15 19.5C15 18.7 15.7 18 16.5 18ZM2 3L2.3 3.1C3.6 3.5 4.2 3.8 4.6 4.3C5 4.9 5 5.6 5 7V9.8C5 12.7 5 13.7 5.9 14.6C6.8 15.5 8.1 15.5 10.9 15.5H12M16.2 15.5C17.8 15.5 18.6 15.5 19.1 15.1C19.7 14.6 19.8 13.8 20.2 12.3L20.7 9.9C21 8.1 21.2 7.3 20.7 6.7C20.3 6.1 18.8 6.1 17.1 6.1H11M5 6.1H7" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
 
-        <!-- Account -->
-        <div id="nav-account">
-            <h1>Account</h1>
-            <svg class="icon icon--arrow-bottom" viewBox="0 0 12 8" role="presentation">
-            <path stroke="currentColor" stroke-width="1" d="M10 2L6 6 2 2" fill="none" stroke-linecap="square"></path>
-            </svg>
-        </div>
-        </div>
-    </nav>
+                <!-- Account -->
+                <div id="nav-account" class="account-dropdown">
+                    <span>My Account</span>
+                    <svg class="icon icon--arrow-bottom" viewBox="0 0 12 8" role="presentation">
+                        <path stroke="currentColor" stroke-width="1" d="M10 2L6 6 2 2" fill="none" stroke-linecap="square"></path>
+                    </svg>
+                </div>
+            </div>
+        </nav>
     </header>
 
 
@@ -464,46 +465,41 @@
             </div>
         </div>
 
-        <!--Main Footer-->
+    <!--Main Footer-->
+    <footer>
         <div id="primary-footer-links">
             <div class="footer-container-primary">
-
                 <!--First Container (Info)-->
                 <div id="footer-anitubo-information">
                     <div id="footer-anitubo-logo">
                         <h1>
-                            ANI<span>TUB<img src="IMAGES/tomato.png" alt="ANITUBO Logo"></span>
+                            ANI<span>TUBO</span>
                         </h1>
                     </div>
 
                     <!--Address-->
                     <div class="footer-information-content">
                         <img class="footer-info-icon" src="IMAGES/location.png" alt="address icon">
-                        <h6>Address: </h6>
-                        <p>1762 Antipolo, Rizal</p>
+                        <p>1762 Antipolo, Rizal, Philippines</p>
                     </div>
 
                     <!--Call Us-->
                     <div class="footer-information-content">
                         <img class="footer-info-icon" src="IMAGES/telephone.png" alt="telephone icon">
-                        <h6>Call Us: </h6>
-                        <p>(+63) 555-014</p>
+                        <p><a href="tel:+63555014">(+63) 555-014</a></p>
                     </div>
 
                     <!--Email-->
                     <div class="footer-information-content">
                         <img class="footer-info-icon" src="IMAGES/email.png" alt="email icon">
-                        <h6>Email: </h6>
-                        <p>anitubo@contact.com</p>
+                        <p><a href="mailto:anitubo@contact.com">anitubo@contact.com</a></p>
                     </div>
 
                     <!--Work hours: -->
                     <div class="footer-information-content">
-                        <img class="footer-info-icon" src="IMAGES/time.png" alt="email icon">
-                        <h6>Work hours: </h6>
+                        <img class="footer-info-icon" src="IMAGES/time.png" alt="hours icon">
                         <p>8AM - 10PM, Monday - Saturday</p>
                     </div>
-
                 </div>
 
                 <!--Second Container (Account)-->
@@ -514,11 +510,10 @@
 
                     <div class="footer-link-list">
                         <ul>
-                            <li><a href="#">Wishlist</a></li>
-                            <li><a href="#">Cart</a></li>
-                            <li><a href="#">Track Order</a></li>
-                            <li><a href="#">Shipping Details</a></li>
-
+                            <li><a href="#">My Profile</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="#">Address Book</a></li>
+                            <li><a href="#">Payment Methods</a></li>
                         </ul>
                     </div>
                 </div>
@@ -526,52 +521,35 @@
                 <!--Third Container (Help)-->
                 <div id="footer-help-links" class="footer-link">
                     <div class="footer-link-title">
-                        <h5>Help</h5>
+                        <h5>Customer Service</h5>
                     </div>
 
                     <div class="footer-link-list">
                         <ul>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Shipping Info</a></li>
+                            <li><a href="#">Returns & Exchanges</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <!--Fourt Container (Useful Links)-->
+                <!--Fourth Container (Useful Links)-->
                 <div id="footer-useful-links" class="footer-link">
                     <div class="footer-link-title">
-                        <h5>Categories</h5>
+                        <h5>Shop</h5>
                     </div>
 
                     <div class="footer-link-list">
                         <ul>
-                            <li><a href="#">Fruits & Vegetables</a></li>
-                            <li><a href="#">Meat & Fish</a></li>
-                            <li><a href="#">Bread & Bakery</a></li>
-                            <li><a href="#">Others</a></li>
+                            <li><a href="#">Fresh Produce</a></li>
+                            <li><a href="#">Meat & Seafood</a></li>
+                            <li><a href="#">Dairy & Eggs</a></li>
+                            <li><a href="#">Pantry Staples</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Copyright -->
-        <div id="final-footer-copyright">
-            <div class="footer-container-tertiary">
-                <div id="copyright">
-                    <h6>AniTubo eCommerce &copy; 2025, All Rights Reserved</h6>
-                </div>
-
-                <div id="payment-partnership">
-                    <div class="payment-card"><img src="IMAGES/GCash_Logo.png" alt="Gcash"></div>
-                    <div class="payment-card"><img src="IMAGES/PayMayaLogo.jpg" alt="PayMaya"></div>
-                    <div class="payment-card"><img src="IMAGES/ApplePay.png" alt="Apple Pay"></div>
-                    <div class="payment-card"><img src="IMAGES/7-Eleven.jpg" alt="Seven 11"></div>
-                </div>
-            </div>
-           
         </div>
     </footer>
     
