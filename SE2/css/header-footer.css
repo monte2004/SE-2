@@ -260,24 +260,75 @@ footer {
   height: 16px;
 }
 
-#final-footer-copyright {
-  background-color: var(--white);
-  border-top: 1px solid var(--footer-divider);
-  font-size: 0.9rem;
-  text-align: center;
-  padding: 1rem 0;
-  color: var(--muted-text);
+/* Add these to your existing CSS */
+
+/* Header Improvements */
+.logo h1 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 2.2rem;
+    color: var(--primary-green);
+    letter-spacing: 1px;
 }
 
-#payment-partnership {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
+.search__input::placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: none;
+    letter-spacing: normal;
 }
 
-.payment-card img {
-  height: 25px;
-  object-fit: contain;
+#nav-shopping-cart-group {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: var(--primary-green);
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+.account-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.account-dropdown:hover {
+    background-color: var(--light-gray);
+}
+
+/* Footer Improvements */
+#footer-anitubo-logo h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#footer-anitubo-logo h1 span {
+    color: var(--dark-text);
+}
+
+.footer-information-content p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-information-content a {
+    color: var(--soft-text);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-information-content a:hover {
+    color: var(--primary-green);
 }
