@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FreshMart</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="GalleryPage.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+                <button id="cartBtn"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></button>
+                <button id="userBtn"><i class="fas fa-user"></i></button>
+            </div>
+        </nav>
+    </header>
+    <div class="cart-container">
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="images/eggs.jpg" alt="Organic Eggs">
+                <div class="item-details">
+                    <h3>Organic Eggs</h3>
+                    <div class="price">$12.99</div>
+                    <div class="quantity-controls">
+                        <button class="decrease">-</button>
+                        <span class="quantity">2</span>
+                        <button class="increase">+</button>
+                    </div>
+                    <button class="remove-item">Remove</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>$25.98</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>$5.00</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total</span>
+                <span>$30.98</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

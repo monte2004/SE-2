@@ -1,0 +1,283 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Poiret+One&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kantumruy Pro", sans-serif;
+}
+
+/* Color Variables */
+:root {
+  --main-bg: #f8f8f8;
+  --white: #ffffff;
+  --light-gray: #f0f0f0;
+  --dark-text: #253D32;
+  --soft-text: #4d5b52;
+  --muted-text: #6c757d;
+  --primary-green: #6ea75a;
+  --hover-green: #9ecf8f;
+  --muted-border: #dcdcdc;
+  --footer-bg: #f7fbf6;
+  --footer-divider: #e0e0e0;
+}
+
+/* Navbar Container */
+nav.primary-navbar {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.nav-container {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo h1 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 2.2rem;
+  color: var(--primary-green);
+  flex-shrink: 0;
+}
+
+.search-bar {
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.search__input {
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 14px;
+  color: var(--soft-text);
+  border: 1px solid var(--muted-border);
+  border-radius: 50px;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 18px 18px;
+}
+
+.search__input::placeholder {
+  color: rgba(87, 87, 86, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.search__input:hover,
+.search__input:focus {
+  outline: none;
+  padding: 12px 0;
+  border: none;
+  border-bottom: 1px solid var(--primary-green);
+  border-radius: 0;
+}
+
+.secondary-navbar-navlist ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 600;
+}
+
+.secondary-navbar-navlist a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--dark-text);
+  transition: color 0.3s ease-in-out;
+}
+
+.secondary-navbar-navlist a:hover {
+  color: var(--hover-green);
+}
+
+#nav-shopping-cart-group,
+#nav-account {
+  display: flex;
+  align-items: center;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.nav-btn svg {
+  height: 28px;
+  width: auto;
+  stroke: var(--primary-green);
+}
+
+#nav-account {
+  gap: 0.25rem;
+  margin-left: 1rem;
+}
+
+#nav-account h1 {
+  font-size: 16px;
+  color: var(--soft-text);
+}
+
+#nav-account svg {
+  height: 12px;
+  fill: var(--primary-green);
+}
+
+@media (max-width: 1000px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .secondary-navbar-navlist ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .search-bar {
+    order: 2;
+    margin: 1rem 0;
+  }
+
+  #nav-shopping-cart-group,
+  #nav-account {
+    order: 3;
+    justify-content: center;
+  }
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: var(--soft-text);
+  padding: 3rem 0;
+}
+
+.footer-container,
+.footer-container-primary,
+.footer-container-tertiary {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+#footer-secondary-tags {
+  background-color: var(--white);
+  border-top: 1px solid var(--footer-divider);
+  border-bottom: 1px solid var(--footer-divider);
+  padding: 2rem 0;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 1 30%;
+  min-width: 250px;
+}
+
+.tag-icon {
+  width: 40px;
+  height: auto;
+}
+
+.tag-title h1 {
+  font-size: 1.2rem;
+  font-family: "Lilita One", sans-serif;
+  color: var(--primary-green);
+}
+
+.tag-description p {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+}
+
+.footer-link {
+  flex: 1 1 200px;
+}
+
+.footer-link-title h5 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 1.1rem;
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+}
+
+.footer-link-list ul {
+  list-style: none;
+}
+
+.footer-link-list ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-link-list ul li a {
+  text-decoration: none;
+  color: var(--soft-text);
+  transition: color 0.3s;
+}
+
+.footer-link-list ul li a:hover {
+  color: var(--primary-green);
+}
+
+#footer-anitubo-logo h1 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 1.8rem;
+  color: var(--primary-green);
+}
+
+#footer-anitubo-logo h1 img {
+  height: 1.2rem;
+  vertical-align: middle;
+}
+
+.footer-information-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  color: var(--soft-text);
+}
+
+.footer-info-icon {
+  width: 16px;
+  height: 16px;
+}
+
+#final-footer-copyright {
+  background-color: var(--white);
+  border-top: 1px solid var(--footer-divider);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--muted-text);
+}
+
+#payment-partnership {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.payment-card img {
+  height: 25px;
+  object-fit: contain;
+}

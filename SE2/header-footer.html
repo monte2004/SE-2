@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniTubo - Header and Footer</title>
+    <link rel="stylesheet" href="CSS/header-footer.css">
+    <link rel="icon" type="image/x-icon" href="IMAGES/grain.png">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <header>
+        <nav class="primary-navbar">
+            <div class="nav-container">
+
+                <!-- Logo Section -->
+                <div class="logo">
+                    <h1>
+                        ANI<span>TUB<img src="IMAGES/tomato.png" alt="ANITUB Logo"></span>
+                    </h1>
+                </div>
+        
+                <!-- Search Bar -->
+                <form class="search-bar">
+                    <input class="search__input" type="text" placeholder="Search">
+                </form>                
+        
+                <!-- Navigation Group (Wishlist, Cart, Profile) -->
+                <div class="nav-group">
+                    <div id="nav-wishlist">
+                        <button class="nav-btn">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8.96173 18.9109L9.42605 18.3219L8.96173 18.9109ZM12 5.50063L11.4596 6.02073C11.463 6.02421 11.4664 6.02765 11.4698 6.03106L12 5.50063ZM15.0383 18.9109L15.5026 19.4999L15.0383 18.9109ZM13.4698 8.03034C13.7627 8.32318 14.2376 8.32309 14.5304 8.03014C14.8233 7.7372 14.8232 7.26232 14.5302 6.96948L13.4698 8.03034ZM9.42605 18.3219C7.91039 17.1271 6.25307 15.9603 4.93829 14.4798C3.64922 13.0282 2.75 11.3345 2.75 9.1371H1.25C1.25 11.8026 2.3605 13.8361 3.81672 15.4758C5.24723 17.0866 7.07077 18.3752 8.49742 19.4999L9.42605 18.3219ZM2.75 9.1371C2.75 6.98623 3.96537 5.18252 5.62436 4.42419C7.23607 3.68748 9.40166 3.88258 11.4596 6.02073L12.5404 4.98053C10.0985 2.44352 7.26409 2.02539 5.00076 3.05996C2.78471 4.07292 1.25 6.42503 1.25 9.1371H2.75ZM8.49742 19.4999C9.00965 19.9037 9.55954 20.3343 10.1168 20.6599C10.6739 20.9854 11.3096 21.25 12 21.25V19.75C11.6904 19.75 11.3261 19.6293 10.8736 19.3648C10.4213 19.1005 9.95208 18.7366 9.42605 18.3219L8.49742 19.4999ZM15.5026 19.4999C16.9292 18.3752 18.7528 17.0866 20.1833 15.4758C21.6395 13.8361 22.75 11.8026 22.75 9.1371H21.25C21.25 11.3345 20.3508 13.0282 19.0617 14.4798C17.7469 15.9603 16.0896 17.1271 14.574 18.3219L15.5026 19.4999ZM22.75 9.1371C22.75 6.42503 21.2153 4.07292 18.9992 3.05996C16.7359 2.02539 13.9015 2.44352 11.4596 4.98053L12.5404 6.02073C14.5983 3.88258 16.7639 3.68748 18.3756 4.42419C20.0346 5.18252 21.25 6.98623 21.25 9.1371H22.75ZM14.574 18.3219C14.0479 18.7366 13.5787 19.1005 13.1264 19.3648C12.6739 19.6293 12.3096 19.75 12 19.75V21.25C12.6904 21.25 13.3261 20.9854 13.8832 20.6599C14.4405 20.3343 14.9903 19.9037 15.5026 19.4999L14.574 18.3219ZM11.4698 6.03106L13.4698 8.03034L14.5302 6.96948L12.5302 4.97021L11.4698 6.03106Z" fill="#000000"></path> </g></svg>
+                            <span>Wishlist</span>  <!-- Hidden but accessible text -->
+                        </button>
+                    </div>
+                    
+                    <div id="nav-shopping-cart-group">
+                        <button class="nav-btn">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z" stroke="#000000" stroke-width="1.5"></path> <path d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z" stroke="#000000" stroke-width="1.5"></path> <path d="M2 3L2.26121 3.09184C3.5628 3.54945 4.2136 3.77826 4.58584 4.32298C4.95808 4.86771 4.95808 5.59126 4.95808 7.03836V9.76C4.95808 12.7016 5.02132 13.6723 5.88772 14.5862C6.75412 15.5 8.14857 15.5 10.9375 15.5H12M16.2404 15.5C17.8014 15.5 18.5819 15.5 19.1336 15.0504C19.6853 14.6008 19.8429 13.8364 20.158 12.3075L20.6578 9.88275C21.0049 8.14369 21.1784 7.27417 20.7345 6.69708C20.2906 6.12 18.7738 6.12 17.0888 6.12H11.0235M4.95808 6.12H7" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+                            <span>Shopping Cart</span>  <!-- Hidden but accessible text -->
+                        </button>
+
+                        <div id="nav-shopping-cart-text">
+                            <p>My Cart</p>
+                            <p><span id="nav-amount">&#x20B1;00.00</span></p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div id="nav-account">
+                        <button class="nav-btn">
+                            <!--<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.12 12.78C12.05 12.77 11.96 12.77 11.88 12.78C10.12 12.72 8.71997 11.28 8.71997 9.50998C8.71997 7.69998 10.18 6.22998 12 6.22998C13.81 6.22998 15.28 7.69998 15.28 9.50998C15.27 11.28 13.88 12.72 12.12 12.78Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M18.74 19.3801C16.96 21.0101 14.6 22.0001 12 22.0001C9.40001 22.0001 7.04001 21.0101 5.26001 19.3801C5.36001 18.4401 5.96001 17.5201 7.03001 16.8001C9.77001 14.9801 14.25 14.9801 16.97 16.8001C18.04 17.5201 18.64 18.4401 18.74 19.3801Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            <span>Profile</span>   Hidden but accessible text -->
+                            <h1>Account</h1>
+                            <svg class="icon icon--arrow-bottom" viewBox="0 0 12 8" role="presentation">
+                                <path stroke="currentColor" stroke-width="1" d="M10 2L6 6 2 2" fill="none" stroke-linecap="square"></path>
+                            </svg>
+                        </button>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="secondary-navbar">
+            <div class="secondary-nav-container">
+                <div class="secondary-navbar-navlist">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="secondary-navbar-contact">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.0002 4V5C15.0002 6.88562 15.0002 7.82843 15.586 8.41421C16.1718 9 17.1146 9 19.0002 9H20.5002M20.5002 9L18.0002 7M20.5002 9L18.0002 11" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M4.00655 7.93309C3.93421 9.84122 4.41713 13.0817 7.6677 16.3323C8.45191 17.1165 9.23553 17.7396 10 18.2327M5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C15.2529 20.0243 14.1963 19.9541 13 19.6111" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+                    <p>(+63) 555-014</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+            <!--CONTENT HERE-->
+            <h1>Content Here </h1>
+    </main>
+
+
+
+    <!--FOOTER-->
+    <footer>
+        <!--Them Tags-->
+        <div id="footer-secondary-tags">
+            <!--Acts as gutter space-->
+            <div class="footer-container">
+
+                <!--Tag 1-->
+                <div class="tag">
+                    <div class="tag-image">
+                        <img class="tag-icon" src="IMAGES/Deal-Icon.png" alt="deal icon">
+                    </div>
+
+                    <div class="tag-information">
+                        <div class="tag-title">
+                            <h1>Best Prices & Deals</h1>
+                        </div>
+
+                        <div class="tag-description">
+                            <p>Don't miss our daily amazing deals and prices</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tag 2-->
+                <div class="tag">
+                    <div class="tag-image">
+                        <img class="tag-icon" src="IMAGES/Refund-Icon.png" alt="refund icon">
+                    </div>
+
+                    <div class="tag-information">
+                        <div class="tag-title">
+                            <h1>Refundable</h1>
+                        </div>
+
+                        <div class="tag-description">
+                            <p>If your items have damage we agree to refund it</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tag 3-->
+                <div class="tag">
+                    <div class="tag-image">
+                        <img class="tag-icon" src="IMAGES/Delivery-Icon.png" alt="delivery icon">
+                    </div>
+
+                    <div class="tag-information">
+                        <div class="tag-title">
+                            <h1>Free Delivery</h1>
+                        </div>
+
+                        <div class="tag-description">
+                            <p>Delivery coverage is currently restricted but free to Rizal and its surrounding communities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Main Footer-->
+        <div id="primary-footer-links">
+            <div class="footer-container-primary">
+
+                <!--First Container (Info)-->
+                <div id="footer-anitubo-information">
+                    <div id="footer-anitubo-logo">
+                        <h1>
+                            ANI<span>TUB<img src="IMAGES/tomato.png" alt="ANITUBO Logo"></span>
+                        </h1>
+                    </div>
+
+                    <!--Address-->
+                    <div class="footer-information-content">
+                        <img class="footer-info-icon" src="IMAGES/location.png" alt="address icon">
+                        <h6>Address: </h6>
+                        <p>1762 Antipolo, Rizal</p>
+                    </div>
+
+                    <!--Call Us-->
+                    <div class="footer-information-content">
+                        <img class="footer-info-icon" src="IMAGES/telephone.png" alt="telephone icon">
+                        <h6>Call Us: </h6>
+                        <p>(+63) 555-014</p>
+                    </div>
+
+                    <!--Email-->
+                    <div class="footer-information-content">
+                        <img class="footer-info-icon" src="IMAGES/email.png" alt="email icon">
+                        <h6>Email: </h6>
+                        <p>anitubo@contact.com</p>
+                    </div>
+
+                    <!--Work hours: -->
+                    <div class="footer-information-content">
+                        <img class="footer-info-icon" src="IMAGES/time.png" alt="email icon">
+                        <h6>Work hours: </h6>
+                        <p>8AM - 10PM, Monday - Saturday</p>
+                    </div>
+
+                </div>
+
+                <!--Second Container (Account)-->
+                <div id="footer-account-links" class="footer-link">
+                    <div class="footer-link-title">
+                        <h5>My Account</h5>
+                    </div>
+
+                    <div class="footer-link-list">
+                        <ul>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Shipping Details</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Third Container (Help)-->
+                <div id="footer-help-links" class="footer-link">
+                    <div class="footer-link-title">
+                        <h5>Help</h5>
+                    </div>
+
+                    <div class="footer-link-list">
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Fourt Container (Useful Links)-->
+                <div id="footer-useful-links" class="footer-link">
+                    <div class="footer-link-title">
+                        <h5>Categories</h5>
+                    </div>
+
+                    <div class="footer-link-list">
+                        <ul>
+                            <li><a href="#">Fruits & Vegetables</a></li>
+                            <li><a href="#">Meat & Fish</a></li>
+                            <li><a href="#">Bread & Bakery</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div id="final-footer-copyright">
+            <div class="footer-container-tertiary">
+                <div id="copyright">
+                    <h6>AniTubo eCommerce &copy; 2025, All Rights Reserved</h6>
+                </div>
+
+                <div id="payment-partnership">
+                    <div class="payment-card"><img src="IMAGES/GCash_Logo.png" alt="Gcash"></div>
+                    <div class="payment-card"><img src="IMAGES/PayMayaLogo.jpg" alt="PayMaya"></div>
+                    <div class="payment-card"><img src="IMAGES/ApplePay.png" alt="Apple Pay"></div>
+                    <div class="payment-card"><img src="IMAGES/7-Eleven.jpg" alt="Seven 11"></div>
+                </div>
+            </div>
+           
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FreshMart</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="GalleryPage.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+                <button id="cartBtn"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></button>
+                <button id="userBtn"><i class="fas fa-user"></i></button>
+            </div>
+        </nav>
+    </header>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>Customer Support</h3>
+            <button class="close-chat">×</button>
+        </div>
+        <div class="chat-messages">
+            <div class="message ai">
+                <div class="avatar">AI</div>
+                <div class="content">Hello! How can I help you today?</div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message...">
+            <button class="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>

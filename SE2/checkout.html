@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FreshMart</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="GalleryPage.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+                <button id="cartBtn"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></button>
+                <button id="userBtn"><i class="fas fa-user"></i></button>
+            </div>
+        </nav>
+    </header>
+    <div class="checkout-container">
+        <div class="checkout-steps">
+            <div class="step active">1. Shipping</div>
+            <div class="step">2. Payment</div>
+            <div class="step">3. Review</div>
+        </div>
+        
+        <form class="checkout-form">
+            <div class="form-section">
+                <h3>Shipping Information</h3>
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" required>
+                </div>
+                <!-- More form fields -->
+            </div>
+            
+            <div class="payment-methods">
+                <h3>Payment Method</h3>
+                <!-- Payment options -->
+            </div>
+            
+            <div class="order-summary">
+                <h3>Your Order</h3>
+                <!-- Order items -->
+                <button type="submit" class="place-order">Place Order</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

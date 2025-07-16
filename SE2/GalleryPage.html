@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FreshMart</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="GalleryPage.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+                <button id="cartBtn"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></button>
+                <button id="userBtn"><i class="fas fa-user"></i></button>
+            </div>
+        </nav>
+    </header>
+    <div class="gallery-container">
+        <!-- Sidebar Filter -->
+        <aside class="gallery-sidebar">
+            <button class="filter-button">Filter ⚙</button>
+            <div class="filter-section">
+                <h3>All Categories</h3>
+                <ul>
+                    <li><label><input type="checkbox" data-category="egg"> Egg (134)</label></li>
+                    <li><label><input type="checkbox" data-category="vegetables"> Vegetables (150)</label></li>
+                    <li><label><input type="checkbox" data-category="fruits"> Fruits (54)</label></li>
+                    <li><label><input type="checkbox" data-category="meat"> Meat (47)</label></li>
+                    <li><label><input type="checkbox" data-category="oil"> Oil (43)</label></li>
+                </ul>
+            </div>
+            <div class="filter-section">
+                <h3>Price</h3>
+                <input 
+                    type="range" 
+                    min="50" 
+                    max="1500" 
+                    value="500" 
+                    id="priceRange"
+                    aria-label="Filter by price range"
+                    aria-valuetext="Current price: $50 to $1500"
+                >
+                <p id="priceDisplay">Price: $50 - $1,500</p>
+            </div>
+            <div class="filter-section">
+                <h3>Rating</h3>
+                <ul>
+                    <li><label><input type="checkbox" data-rating="5"> ⭐⭐⭐⭐⭐ 5.0</label></li>
+                    <li><label><input type="checkbox" data-rating="4"> ⭐⭐⭐⭐ & up</label></li>
+                    <li><label><input type="checkbox" data-rating="3"> ⭐⭐⭐ & up</label></li>
+                    <li><label><input type="checkbox" data-rating="2"> ⭐⭐ & up</label></li>
+                    <li><label><input type="checkbox" data-rating="1"> ⭐ & up</label></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <main class="gallery-main">
+            <div class="gallery-header">
+                <h2>Products</h2>
+                <select id="sortDropdown">
+                    <option value="default">Sort by: Default</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+            
+            <div class="gallery-grid"></div>
+            
+            <div class="pagination">
+                <button class="prev-btn">&laquo; Prev</button>
+                <div class="page-numbers">
+                    <!-- Dynamically filled by JavaScript -->
+                </div>
+                <button class="next-btn">Next &raquo;</button>
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/data.js"></script>
+</body>
+</html>
